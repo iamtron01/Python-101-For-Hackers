@@ -1,0 +1,1 @@
+Python 101 For Hackers Course: https://academy.tcm-sec.com/p/python-101-for-hackers
