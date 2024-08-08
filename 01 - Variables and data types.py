@@ -7,17 +7,17 @@ print(name_length)
 name_length = int("4")
 print(name_length)
 
-name_list = ["Matthew", "Mark", "Luke", "John"]
+name_list = ["Parthos", "Athos", "Aramis", "D'Artagnan"]
 name1, name2, name3, name4 = name_list
 print(name1)
 print(name2)
 print(name3)
 print(name4)
 
-name_tuple = ("Matthew", "Mark", "Luke", "John")
+name_tuple = ("Parthos", "Athos", "Aramis", "D'Artagnan")
 print(type(name_tuple))
 
-name_dictionary = {"Matthew": 1, "Mark": 2, "Luke": 3, "John": 4}
+name_dictionary = {"Parthos": 1, "Athos": 2, "Aramis": 3, "D'Artagnan": 4}
 print(type(name_dictionary))
 
 name_boolean = True
