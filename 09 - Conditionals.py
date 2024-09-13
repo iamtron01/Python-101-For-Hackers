@@ -20,4 +20,3 @@ elif 1 <= 1:
 
 if 0 < 1: print("0 < 1")
 print("1 >= 1" if 1 >= 1 else "1 < 1")
-
