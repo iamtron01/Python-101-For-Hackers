@@ -41,7 +41,7 @@ def bind(func, iterable):
     return list(chain.from_iterable(map(func, iterable)))
 print(bind(lambda x: x, [[1,2,3],[4,5,6]]))
 
-def dictionary(**kvargs):
-    for key, value in kvargs.items():
+def dictionary(**kwargs):
+    for key, value in kwargs.items():
         print("{}: {}".format(key, value))
 dictionary(a=1, b=2, c=3)
