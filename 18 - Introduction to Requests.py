@@ -36,11 +36,14 @@ response = requests.post(
     data={'key':'value'})
 print(response.text)
 
-#files = {'file': open('google.png', 'rb')}
-#response = requests.post(
-#    'http://httpbin.org/post',
-#    files=files)
-#print(response.text)
+try:
+    files = {'file': open('google.png', 'rb')}
+    response = requests.post(
+        'http://httpbin.org/post',
+        files=files)
+    print(response.text)
+except Exception as exception:
+    print(f"An error occurred: {exception}")
 
 print("---auth---")
 response = requests.get(
