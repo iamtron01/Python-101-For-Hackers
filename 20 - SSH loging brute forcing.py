@@ -5,6 +5,12 @@ import sys
 FAIL = -1
 SUCCESS = 0
 
+def open_passwords(passwords):
+    with open(passwords, "r") as passwords:
+        for password in passwords:
+            password = password.strip()
+            yield password
+
 def ssh_login(host, port, username, password):
     try:
         connection = ssh(
@@ -15,12 +21,6 @@ def ssh_login(host, port, username, password):
         return connection.connected()
     except ssh_exception.AuthenticationException:
         return False
-
-def open_passwords(passwords):
-    with open(passwords, "r") as passwords:
-        for password in passwords:
-            password = password.strip()
-            yield password
 
 if __name__ == "__main__":
     try:
