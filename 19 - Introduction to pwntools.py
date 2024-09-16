@@ -473,3 +473,9 @@ print(md5_checksum)  # This will print the hexadecimal representation of the MD5
 #    - The function will output the SHA-1 checksum of this byte string.
 sha1_checksum = sha1sumhex(b"hello")
 print(sha1_checksum)  # This will print the hexadecimal representation of the SHA-1 hash of "hello".
+
+print("----------------------------")
+
+bits_for_a = bits(b'a')
+print(bits_for_a)
+print(unbits(bits_for_a))
