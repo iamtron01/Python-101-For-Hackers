@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     except IndexError:
         print("[-] Usage: %s <host> <port> <username> <password file>" % sys.argv[0])
-        print('[-] Example: %s 192.168.10.5 22 root passwords.txt' % sys.argv[0]) 
+        print("[-] Example: %s 192.168.10.5 22 root passwords.txt" % sys.argv[0]) 
         sys.exit(FAIL)
     except Exception as exception:
         print("[-] An exception occured %s" % exception)

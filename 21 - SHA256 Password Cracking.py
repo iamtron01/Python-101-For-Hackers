@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     except IndexError:
         print("[-] Usage: %s <hash to crack> <password file>" % sys.argv[0])
-        print('[-] Example: %s  008c7... hashes.txt' % sys.argv[0]) 
+        print("[-] Example: %s  008c7... hashes.txt" % sys.argv[0]) 
         sys.exit(FAIL)
     except Exception as exception:
         print("[-] An exception occured %s" % exception)
