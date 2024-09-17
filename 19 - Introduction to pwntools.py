@@ -1,5 +1,4 @@
 from pwn import *
-import pwnlib.util
 import pwnlib.util.hashes
 
 # Generate a cyclic pattern of 50 bytes.
